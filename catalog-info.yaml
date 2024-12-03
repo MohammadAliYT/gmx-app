@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  namespace: gmx-app
+  annotations:
+    github.com/project-slug: mohammad-ali_uics/gmx-app
+    backstage.io/kubernetes-id: gmx-app-service
+  name: gmx-app
+  description: GMX App for user management
+  tags:
+    - app
+    - gmx
+  relations:
+    - type: ownedBy
+      targetRef: user:default/mohammad-ali_uics
+      target:
+        kind: user
+        namespace: gmx-app
+        name: mohammad-ali_uics
+spec:
+  type: website
+  owner: user:mohammad-ali_uics
+  lifecycle: experimental

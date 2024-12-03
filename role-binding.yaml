@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: gmx-app-role-binding
+  namespace: gmx-service-account
+subjects:
+  - kind: ServiceAccount
+    name: gmx-service-account
+    namespace: gmx-service-account
+roleRef:
+  kind: Role
+  name: gmx-app-role
+  apiGroup: rbac.authorization.k8s.io

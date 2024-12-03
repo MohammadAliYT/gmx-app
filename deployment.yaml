@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gmx-app
+  namespace: gmx-service-account
+  labels:
+    app: gmx-app
+    backstage.io/kubernetes-id: gmx-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gmx-app
+  template:
+    metadata:
+      labels:
+        app: gmx-app
+    spec:
+      serviceAccountName: gmx-service-account
+      containers:
+        - name: gmx-app
+          image: gmx-app
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000
+      imagePullSecrets:
+        - name: regcred

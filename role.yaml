@@ -1,0 +1,9 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: gmx-service-account
+  name: gmx-app-role
+rules:
+  - apiGroups: ["*"] # or specify specific api groups
+    resources: ["pods"] # or other resources as needed
+    verbs: ["get", "list", "watch"]
