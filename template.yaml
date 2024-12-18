@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: Github Imported Template for Testing
+  name: Github-Imported-Template-for-Testing
   title: Custome Scaffolder
   description: An example template for the scaffolder that creates a simple Node.js service
 spec:
