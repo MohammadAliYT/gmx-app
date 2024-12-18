@@ -19,7 +19,7 @@ metadata:
   #     targetRef: user:default/mohammad-ali_uics
 spec:
   type: website
-  owner: user:mohammad-ali_uics
+  owner: mohammad-ali_uics
   lifecycle: production
   system: project-x
 ---
