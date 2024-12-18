@@ -4,7 +4,7 @@ metadata:
   name: dev-api
   description: Retrieve dev details
 spec:
-  type: myapi
+  type: openapi
   lifecycle: production
   owner: dev-relations-team
   system: dev-engagement-portal
