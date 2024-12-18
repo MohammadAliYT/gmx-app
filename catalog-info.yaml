@@ -2,12 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: gmx-app
-  namespace: gmx-app
   description: A 1&1 App
   annotations:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: mohammad-ali_uics/gmx-app
-    backstage.io/kubernetes-id: gmx-app-service
   tags:
     - app
     - gmx
@@ -16,9 +14,9 @@ metadata:
       title: Admin Dashboard
       icon: dashboard
       type: admin-dashboard
-  relations:
-    - type: ownedBy
-      targetRef: user:default/mohammad-ali_uics
+  # relations:
+  #   - type: ownedBy
+  #     targetRef: user:default/mohammad-ali_uics
 spec:
   type: website
   owner: user:mohammad-ali_uics
