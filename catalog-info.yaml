@@ -19,21 +19,16 @@ metadata:
   relations:
     - type: ownedBy
       targetRef: user:default/mohammad-ali_uics
-      target:
-        kind: user
-        namespace: gmx-app
-        name: mohammad-ali_uics
 spec:
   type: website
   owner: user:mohammad-ali_uics
   lifecycle: production
-
-  ---
+---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-    name: project-x
-    description: Handy tools to keep devs in the loop
+  name: project-x
+  description: Handy tools to keep devs in the loop
 spec:
-    owner: dev-relations-team
-    domain: devs
+  owner: dev-relations-team
+  domain: devs
