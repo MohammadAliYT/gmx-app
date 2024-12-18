@@ -23,6 +23,7 @@ spec:
   type: website
   owner: user:mohammad-ali_uics
   lifecycle: production
+  system: project-x
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
